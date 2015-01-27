@@ -1,0 +1,287 @@
+/* FASTGAP https://github.com/GustavoCostaW/FastGap */
+/* CUSTOMIZE YOUR APP */
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+#menu ul li {
+  color: #A02615;
+  font-weight: bold; }
+
+#scroll {
+  padding: 10px;
+  box-sizing: border-box; }
+
+#content {
+  background: white;
+  color: #A02615; }
+
+#content a {
+  font-weight: bold;
+  color: #A02615;
+  font-size: 13px; }
+
+.title-page {
+  font-size: 30px;
+  color: #A02615;
+  font-weight: bold;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc; }
+
+.page-item {
+  margin-top: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px; }
+
+.page-item img {
+  float: right;
+  width: 80px;
+  height: 80px;
+  border-radius: 60px;
+  margin-left: 10px;
+  margin-top: 10px; }
+
+#internal-page {
+  width: 100%; }
+
+#internal-page h1 {
+  font: 5px "Source Sans", helvetica, arial, sans-serif;
+  width: 100%;
+  font-size: 25px;
+  text-align: center; }
+
+.page-item p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px; }
+
+.developers {
+  margin-top: 10px;
+  text-align: center; }
+
+.developers img {
+  border-radius: 60px; }
+
+.developers div {
+  display: inline-block;
+  padding: 5px; }
+
+/*-----------------------*/
+
+html,
+body {
+  background: white;
+}
+body {
+  background: #f4f4f4;
+}
+/* APP LOGO IMG */
+
+.dallas-header {
+  height: 60px;
+  text-align: center;
+  background: #000000 url('../img/HTLogo_Dallas_180x43.jpg') no-repeat center;
+  color: #0050EF;
+}
+.houston-header {
+  height: 60px;
+  text-align: center;
+  background: #000000 url('../img/HTLogo_Houston_180x43.jpg') no-repeat center;
+  color: #0050EF;
+}
+/* BOX LOAD PAGES */
+
+/* SCROLL */
+.overthrow-enabled #scroll {
+  background: #f4f4f4;
+}
+/* MENU BUTTON */
+
+#menu-button {
+  top: -2px;
+  left: 3px;
+  width: 80px;
+  color: white;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 37px;
+  background: #345365;
+  background: url('../img/menu_icon.png') no-repeat center;
+}
+/* MENU APP */
+
+menu {
+  width: 180px;
+  height: 100%;
+  border-right: 1px solid #ccc;
+}
+
+
+nav {
+  display: block;
+}
+
+ .navigation-bar {
+  width: 100%;
+  display: block;
+  background-color: #0057af;
+  color: #ffffff;
+}
+.navigation-bar .navigation-bar-content {
+  background-color: inherit;
+  color: inherit;
+  display: block;
+}
+.navigation-bar .navigation-bar-content .element,
+.navigation-bar .navigation-bar-content .element-divider {
+  display: block;
+  float: left;
+  background-color: inherit;
+  position: relative;
+}
+.navigation-bar .navigation-bar-content .element.place-right,
+.navigation-bar .navigation-bar-content .element-divider.place-right {
+  float: right;
+}
+.navigation-bar .navigation-bar-content .element {
+  color: #1d1d1d;
+  padding: 5px;
+  line-height: 15px;
+  color: inherit;
+  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.navigation-bar .navigation-bar-content .element:hover {
+  background-color: #00aafd;
+}
+.navigation-bar .navigation-bar-content .element > a.dropdown-toggle {
+  color: inherit;
+  position: relative;
+}
+.navigation-bar .navigation-bar-content .element > a.dropdown-toggle:after {
+  position: absolute;
+  left: 100%;
+}
+.navigation-bar .navigation-bar-content .element > .dropdown-menu {
+  top: 100%;
+  left: 0;
+}
+.navigation-bar .navigation-bar-content .element > .dropdown-menu.place-right {
+  right: 0;
+  left: auto;
+}
+.navigation-bar .navigation-bar-content .element-divider {
+  padding: 15px 0;
+  line-height: 15px;
+  width: 1px !important;
+  border-left: 1px #ccc solid;
+  opacity: .3;
+  position: relative;
+}
+.navigation-bar .navigation-bar-content .element-divider:before {
+  content: "|";
+  visibility: hidden;
+}
+.navigation-bar-content .brand {
+  font-size: 18px;
+}
+.navigation-bar-content form {
+  margin: 0;
+  padding-bottom: 0 !important;
+  position: relative;
+}
+.navigation-bar-content .element .input-control.text,
+.navigation-bar-content .element .input-control.password {
+  width: auto;
+  height: auto;
+  position: relative;
+  margin: 0;
+  top: -6px;
+}
+.navigation-bar-content .element .input-control.text [class*='btn-'],
+.navigation-bar-content .element .input-control.password [class*='btn-'] {
+  top: 2px;
+  right: 2px;
+}
+.navigation-bar-content .element .input-control.text input[type='text'],
+.navigation-bar-content .element .input-control.password input[type='text'] {
+  font-size: 12px;
+}
+.navigation-bar-content .input-control.checkbox,
+.navigation-bar-content .input-control.radio {
+  position: relative;
+  margin: 0;
+  top: -6px;
+}
+.navigation-bar-content .button {
+  margin-top: -14px;
+  background-color: inherit;
+}
+.navigation-bar-content .image-button {
+  padding-right: 40px;
+  padding-left: 5px;
+  background-color: inherit;
+}
+.navigation-bar-content .image-button:active {
+  left: auto;
+  right: auto;
+  top: auto;
+}
+.navigation-bar-content .image-button img {
+  width: 40px;
+  height: 40px;
+  margin-top: 2.5px;
+}
+.navigation-bar-content .image-button.image-left {
+  padding-right: 5px;
+  padding-left: 40px;
+}
+.navigation-bar-content [class*="icon-"] {
+  font-size: 16px !important;
+}
+.input-element {
+  padding-bottom: 0 !important;
+}
+.input-element:hover {
+  background-color: inherit !important;
+}
+.navigation-bar.dark {
+  background-color: #333333;
+}
+.navigation-bar.dark .element:hover {
+  background-color: #201a1a;
+}
+.navigation-bar.light {
+  background-color: #eeeeee;
+  color: #555555;
+}
+.navigation-bar.light .element:hover {
+  background-color: #999999;
+  color: #ffffff;
+}
+.navigation-bar.fixed-top,
+.navigation-bar.fixed-bottom {
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+}
+.navigation-bar.fixed-top {
+  top: 0;
+  bottom: auto;
+}
+.navigation-bar.fixed-bottom {
+  bottom: 0;
+  top: auto;
+}
+.navigation-bar:before,
+.navigation-bar-content:before,
+.navigation-bar:after,
+.navigation-bar-content:after {
+  display: table;
+  content: "";
+}
+.navigation-bar:after,
+.navigation-bar-content:after {
+  clear: both;
+}

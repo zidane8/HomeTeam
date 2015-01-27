@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<link href="http://miguel-angel.us/Metro-UI-CSS-master/css/metro-bootstrap.css" rel="stylesheet">
+		<!-- Load JavaScript Libraries -->
+		<script src="http://miguel-angel.us/Metro-UI-CSS-master/js/jquery/jquery.min.js"></script>
+		<!-- Required -->
+		<script src="http://miguel-angel.us/Metro-UI-CSS-master/js/jquery/jquery.widget.min.js"></script>
+		<!-- Required -->
+		<script src="http://miguel-angel.us/Metro-UI-CSS-master/js/jquery/jquery.mousewheel.js"></script>
+		<script src="http://miguel-angel.us/Metro-UI-CSS-master/js/jquery/jquery.easing.1.3.min.js"></script>
+
+		<script type="text/javascript">
+			$.noConflict();
+			jQuery( document ).ready(function( $ ) {
+				var loc = localStorage.getItem("location");
+				if (loc == "Dallas") {
+					jQuery('#top-header').addClass('dallas-header');
+				} else {
+					jQuery('#top-header').addClass('houston-header');
+				}
+			});
+			
+		</script>
+		<script>
+		function getNoticiasSlider1(){
+	$
+	.ajax({
+		url : "http://miguel-angel.us/php-simple-proxy-master/ba-simple-proxy.php",
+		data : {
+			// enter the url of the site you need data from here:
+			url : "http://es.soccerway.com/teams/mexico/club-tigres-de-la-unl/1470/statistics/",
+			full_headers : 1,
+			full_status : 1,
+		},
+		dataType : "jsonp",
+		// async:false,
+		success : function(data) {
+			// alert(JSON.stringify(data["headers"]["Server"]));
+			// get html and replace all occurances of \ with ''
+			var html = JSON.stringify(data.contents).replace(/\\/g, '');
+			
+			alert(html);
+			
+		},
+		error : function() {
+			// handle the error
+			$('body').append("<strong>FAIL</strong>");
+		}
+			});
+		}
+		</script>
+		<meta charset="UTF-8" />
+
+		<!-- Styles -->
+		<!-- Topcoat mobile -->
+		<link rel="stylesheet" href="assets/css/topcoat-mobile-light.min.css" />
+		<!-- Snap -->
+		<link rel="stylesheet" href="assets/css/snap.css" />
+		<!-- Fastgap base style -->
+		<link rel="stylesheet" href="assets/css/fastgap.min.css" />
+		<!-- Your custom style -->
+		<link rel="stylesheet" href="assets/css/style.css" />
+
+		<!-- Javascripts -->
+		<!--<script src="../dist/js/fastgap.controllers.js"></script>-->
+		<!--<script src="../dist/js/fastgap.libs.js"></script>-->
+		<!--<script src="../dist/js/fastgap.core.js"></script>-->
+		<script src="assets/js/fastgap.min.js"></script>
+
+		<!-- VIEWPORT -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<script>
+			document.write('<title>Home Team | ' + loc + '</title>');
+		</script>
+
+	</head>
+
+	<body>
+		<!-- BOX CONTENT LOAD PAGES WITH AJAX-->
+		<div id="page">
+			<div class="snap-drawers">
+				<!-- MENU -->
+				<menu id="menu">
+					<div class="topcoat-list" id="menu-content">
+						<ul class="topcoat-list__container">
+							<li class="topcoat-list__item botoes-app" data-url="Home.html" data-controler='HomeController'>
+								Home
+							</li>
+							<li class="topcoat-list__item botoes-app" data-url="Community.html" data-controler='CommunityPageController'>
+								Community
+							</li>
+							<li class="topcoat-list__item botoes-app" data-url="Volunteering.html" data-controler='VolunteeringPageController'>
+								Volunteering
+							</li>
+							<li class="topcoat-list__item botoes-app" data-url="HTN.html" data-controler='HTNPageController'>
+								Networking
+							</li>
+							<li class="topcoat-list__item botoes-app" data-url="HTF.html" data-controler='HTFPageController'>
+								Fitness
+							</li>
+							<li class="topcoat-list__item botoes-app" data-url="Media.html" data-controler='MediaPageController'>
+								Media
+							</li>
+							<li class="topcoat-list__item botoes-app" data-url="Staff.html" data-controler='StaffPageController'>
+								Staff
+							</li>
+							<li class="topcoat-list__item botoes-app" data-url="Chris.html" data-controler='ChrisPageController'>
+								Chris Griffin
+							</li>
+							<li class="topcoat-list__item botoes-app" onclick="window.location.replace('index.html');">
+								Dashboard
+							</li>
+						</ul>
+					</div>
+				</menu>
+			</div>
+
+			<!-- DYNAMIC CONTENT -->
+			<div id="content" class="snap-content">
+				<!-- HEADER -->
+				<header id="top-header">
+					<!-- APP IMG LOAD WITH CSS -->
+					<div id="menu-button"></div>
+				</header>
+				
+					<nav class="navigation-bar dark">
+						<nav class="navigation-bar-content">
+							<item class="element" onclick="window.location.replace('http://instagram.com/christongriffin');">
+								<img src="assets/icons/instagram.png"></img>
+							</item>
+							<item class="element" onclick="window.location.replace('http://www.facebook.com/christongriffin');">
+								<img src="assets/icons/facebook.png"></img>
+							</item>
+							<item class="element" onclick="window.location.replace('https://twitter.com/christongriffin');">
+								<img src="assets/icons/twitter.png"></img>
+							</item>
+							<item class="element" onclick="window.location.replace('https://vimeo.com/user6384761/videos/sort:date/format:thumbnail');">
+								<img src="assets/icons/vimeo.png"></img>
+							</item>
+							<item class="element" onclick="window.location.replace('http://pinterest.com/christongriffin/pins/');">
+								<img src="assets/icons/pinterest.png"></img>
+							</item>
+							<item class="element" onclick="window.location.replace('index.html');">
+								<img src="assets/icons/share.png"></img>
+							</item>
+							<item class="element" onclick="window.location.replace('index.html');">
+								<img src="assets/icons/inbox.png"></img>
+							</item>
+						</nav>
+					</nav>
+				
+				<!-- load content here -->
+				<div id="scroll" class="overthrow">
+
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
